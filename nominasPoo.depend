@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1778680563 source:c:\jeronimo\nominaspoo\empleado.cpp
+	"Empleado.h"
+
+1778680554 c:\jeronimo\nominaspoo\empleado.h
+	<string>
+
+1778680589 source:c:\jeronimo\nominaspoo\junior.cpp
+	"Junior.h"
+
+1778680779 c:\jeronimo\nominaspoo\junior.h
+	"Empleado.h"
+
+1778680611 source:c:\jeronimo\nominaspoo\lidertecnico.cpp
+	"LiderTecnico.h"
+
+1778680767 c:\jeronimo\nominaspoo\lidertecnico.h
+	"Empleado.h"
+
+1778681049 source:c:\jeronimo\nominaspoo\nomina.cpp
+	"Nomina.h"
+	"Junior.h"
+	"Senior.h"
+	"LiderTecnico.h"
+	"Tester.h"
+
+1778679715 c:\jeronimo\nominaspoo\nomina.h
+	<vector>
+	"Empleado.h"
+
+1778680787 c:\jeronimo\nominaspoo\senior.h
+	"Empleado.h"
+
+1778680797 c:\jeronimo\nominaspoo\tester.h
+	"Empleado.h"
+
+1778680599 source:c:\jeronimo\nominaspoo\senior.cpp
+	"Senior.h"
+
+1778680620 source:c:\jeronimo\nominaspoo\tester.cpp
+	"Tester.h"
+
+1778681570 source:c:\jeronimo\nominaspoo\main.cpp
+	"View.h"
+
+1778681561 c:\jeronimo\nominaspoo\view.h
+	"Nomina.h"
+
+1778680642 source:c:\jeronimo\nominaspoo\view.cpp
+	"View.h"
+	<iostream>
+	<iomanip>
+
