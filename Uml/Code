@@ -1,0 +1,51 @@
+classDiagram
+    direction TB
+
+    class View {
+        -miNomina: Nomina
+        +mostrarNomina()
+    }
+
+    class Nomina {
+        -lista: vector~Empleado*~
+        +agregarEmpleados()
+        +getLista(): vector~Empleado*~
+    }
+
+    class Empleado {
+        <<abstract>>
+        #nombre: string
+        #salarioBase: float
+        +getNombre(): string
+        +getSalarioBase(): float
+        +getPuesto(): string
+        +calcularSalario(): float
+    }
+
+    class Junior {
+        +getPuesto(): string
+        +calcularSalario(): float
+    }
+
+    class Senior {
+        +getPuesto(): string
+        +calcularSalario(): float
+    }
+
+    class LiderTecnico {
+        +getPuesto(): string
+        +calcularSalario(): float
+    }
+
+    class Tester {
+        +getPuesto(): string
+        +calcularSalario(): float
+    }
+
+ 
+    View --> Nomina : 
+    Nomina o-- Empleado : 
+    Empleado <|-- Junior
+    Empleado <|-- Senior
+    Empleado <|-- LiderTecnico
+    Empleado <|-- Tester
